@@ -49,7 +49,7 @@
 
         <Button x:Name="buttonPlay"
                 Grid.Row="1" Margin="150 30 150 30"
-                Content="Play" Click="buttonStartStop_Click"/>
+                Content="Play" Click="buttonPlay_Click"/>
 
     </Grid>
 </Window>

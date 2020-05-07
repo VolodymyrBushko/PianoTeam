@@ -22,14 +22,25 @@ namespace Piano
             InitializeComponent();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        //Андрій, він твій
+        private void buttonPlay_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show((e.Source as Button).Content.ToString());
+
         }
 
+        //Андрій, він твій
         private void buttonStartStop_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+
+
+
+        //Він мій
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show((e.Source as Button).Content.ToString());
         }
     }
 }
