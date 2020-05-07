@@ -1,0 +1,55 @@
+﻿<Window x:Class="Piano.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Piano"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="600">
+    <Grid x:Name="mainGrid">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="insideGrid" Grid.Row="3" Grid.Column="0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="button1" 
+                    Grid.Column="0" Grid.Row="2" Content="button1" Click="button_Click"/>
+            <Button x:Name="button2" 
+                    Grid.Column="1" Content="button2" Click="button_Click"/>
+            <Button x:Name="button3" 
+                    Grid.Column="2" Content="button3" Click="button_Click"/>
+            <Button x:Name="button4" 
+                    Grid.Column="3" Content="button4" Click="button_Click"/>
+            <Button x:Name="button5" 
+                    Grid.Column="4" Content="button5" Click="button_Click"/>
+            <Button x:Name="button6" 
+                    Grid.Column="5" Content="button6" Click="button_Click"/>
+            <Button x:Name="button7" 
+                    Grid.Column="6" Content="button7" Click="button_Click"/>
+
+        </Grid>
+
+        <Button x:Name="buttonStartStop"
+                Grid.Row="0" Margin="150 30 150 30"
+                Content="Start/Stop" Click="buttonStartStop_Click"/>
+
+        <Button x:Name="buttonPlay"
+                Grid.Row="1" Margin="150 30 150 30"
+                Content="Play" Click="buttonStartStop_Click"/>
+
+    </Grid>
+</Window>
