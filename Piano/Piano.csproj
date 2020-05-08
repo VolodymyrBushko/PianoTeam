@@ -94,5 +94,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Sounds\soundKey1.wav" />
+    <Resource Include="Sounds\soundKey2.wav" />
+    <Resource Include="Sounds\soundKey3.wav" />
+    <Resource Include="Sounds\soundKey4.wav" />
+    <Resource Include="Sounds\soundKey5.wav" />
+    <Resource Include="Sounds\soundKey6.wav" />
+    <Resource Include="Sounds\soundKey7.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
