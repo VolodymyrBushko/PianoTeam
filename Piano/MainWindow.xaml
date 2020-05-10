@@ -45,6 +45,7 @@
 
         <Button x:Name="buttonStartStop"
                 Grid.Row="0" Margin="150 30 150 30"
+                Background="lightGreen"
                 Content="Start/Stop" Click="buttonStartStop_Click"/>
 
         <Button x:Name="buttonPlay"
