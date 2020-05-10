@@ -38,7 +38,7 @@ namespace Piano
                     button_Click(null, btn);
                     Thread.Sleep(500);
                 }
-            }); 
+            });
         }
 
         private void buttonStartStop_Click(object sender, RoutedEventArgs e)
@@ -67,26 +67,29 @@ namespace Piano
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            switch ((e.Source as Button).Name)
+            button1.Dispatcher.Invoke(new Action(() =>
             {
-                case "button1": numberKey = "1"; break;
-                case "button2": numberKey = "2"; break;
-                case "button3": numberKey = "3"; break;
-                case "button4": numberKey = "4"; break;
-                case "button5": numberKey = "5"; break;
-                case "button6": numberKey = "6"; break;
-                case "button7": numberKey = "7"; break;
-            }
-            if (ShouldWrite)
-            {
-                list.Add(e);
-            }
-            sri = Application.GetResourceStream(new Uri("Sounds/soundKey" + numberKey + ".wav", UriKind.Relative));
+                switch ((e.Source as Button).Name)
+                {
+                    case "button1": numberKey = "1"; break;
+                    case "button2": numberKey = "2"; break;
+                    case "button3": numberKey = "3"; break;
+                    case "button4": numberKey = "4"; break;
+                    case "button5": numberKey = "5"; break;
+                    case "button6": numberKey = "6"; break;
+                    case "button7": numberKey = "7"; break;
+                }
+                if (ShouldWrite)
+                {
+                    list.Add(e);
+                }
+                sri = Application.GetResourceStream(new Uri("Sounds/soundKey" + numberKey + ".wav", UriKind.Relative));
 
-            player.Stream = sri.Stream;
-            player.Load();
-            player.Play();
-            player.Dispose();
+                player.Stream = sri.Stream;
+                player.Load();
+                player.Play();
+                player.Dispose();
+            }));
         }
     }
 }
