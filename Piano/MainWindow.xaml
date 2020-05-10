@@ -11,6 +11,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
 
@@ -78,6 +79,10 @@
         <Button x:Name="buttonPlay"
                 Grid.Row="1" Margin="150 30 150 30"
                 Content="Play" Click="buttonPlay_Click"/>
+
+        <Button x:Name="buttonClear"
+                Grid.Row="2" Margin="150 30 150 30"
+                Content="Clear" Click="buttonClear_Click"/>
 
     </Grid>
 </Window>

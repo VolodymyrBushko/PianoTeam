@@ -31,6 +31,11 @@ namespace Piano
 
         }
 
+        private void buttonClear_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         private void button_Click(object sender, RoutedEventArgs e)
         {
             switch ((e.Source as Button).Name)
