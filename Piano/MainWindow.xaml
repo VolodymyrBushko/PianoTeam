@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Piano"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="600">
-    <Grid x:Name="mainGrid">
+    <Grid x:Name="mainGrid" Background="Blue">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>

@@ -19,13 +19,13 @@ namespace Piano
             InitializeComponent();
         }
 
-        //Андрій, він твій
+        //Руслан
         private void buttonPlay_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        //Андрій, він твій
+        //Андрый
         private void buttonStartStop_Click(object sender, RoutedEventArgs e)
         {
 
