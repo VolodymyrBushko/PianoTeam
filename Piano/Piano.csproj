@@ -103,5 +103,9 @@
     <Resource Include="Sounds\soundKey6.wav" />
     <Resource Include="Sounds\soundKey7.wav" />
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\key.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
