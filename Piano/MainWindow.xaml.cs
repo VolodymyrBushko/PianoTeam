@@ -24,7 +24,8 @@ namespace Piano
         private void buttonPlay_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("кнопка програе музику");
-       }
+            MessageBox.Show("кнопка програе музику");
+        }
 
         //Андрый
         private void buttonStartStop_Click(object sender, RoutedEventArgs e)
