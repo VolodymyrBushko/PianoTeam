@@ -16,38 +16,33 @@ namespace Piano
         private string numberKey = string.Empty;
 
         private bool ShouldWrite = false;
-        List<int> list;
-
-
+        List<RoutedEventArgs> list = null;
 
         public MainWindow()
         {
-            player = new SoundPlayer(); 
-            list = new List<int>();
+            player = new SoundPlayer();
+            list = new List<RoutedEventArgs>();
 
             InitializeComponent();
         }
 
-        //Руслан
         private void buttonPlay_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show($"{list.Count}");
-            //MessageBox.Show("кнопка програе музику");
         }
 
-        //Андрый
         private void buttonStartStop_Click(object sender, RoutedEventArgs e)
         {
             if (ShouldWrite)
             {
-                MessageBox.Show("recording off"); 
+                MessageBox.Show("recording off");
                 ShouldWrite = false;
                 this.buttonStartStop.Background = Brushes.Green;
             }
             else
             {
                 MessageBox.Show("recording on");
-                
+
                 ShouldWrite = true;
                 this.buttonStartStop.Background = Brushes.Red;
             }
@@ -56,7 +51,8 @@ namespace Piano
 
         private void buttonClear_Click(object sender, RoutedEventArgs e)
         {
-
+            list.Clear();
+            MessageBox.Show("List of sounds is empty!");
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -73,7 +69,7 @@ namespace Piano
             }
             if (ShouldWrite)
             {
-                list.Add(Convert.ToInt32( numberKey));
+                list.Add(e);
             }
             sri = Application.GetResourceStream(new Uri("Sounds/soundKey" + numberKey + ".wav", UriKind.Relative));
 
