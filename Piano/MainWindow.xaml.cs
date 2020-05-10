@@ -2,6 +2,7 @@
 using System.Media;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using System.Windows.Resources;
 
 namespace Piano
@@ -29,6 +30,7 @@ namespace Piano
         private void buttonStartStop_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("hi from Andriy");
+            this.Background = Brushes.Red;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
