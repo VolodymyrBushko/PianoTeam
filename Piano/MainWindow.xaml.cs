@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Media;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -29,6 +31,14 @@ namespace Piano
         private void buttonPlay_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show($"{list.Count}");
+            Task.Run(() =>
+            {
+                foreach (var btn in list)
+                {
+                    button_Click(null, btn);
+                    Thread.Sleep(500);
+                }
+            }); 
         }
 
         private void buttonStartStop_Click(object sender, RoutedEventArgs e)
