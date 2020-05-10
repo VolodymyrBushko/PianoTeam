@@ -28,7 +28,7 @@ namespace Piano
         //Андрій, він твій
         private void buttonStartStop_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("hi from Andriy");
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
