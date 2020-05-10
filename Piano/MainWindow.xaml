@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Piano"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="600">
-    <Grid x:Name="mainGrid" Background="Blue">
+    <Grid x:Name="mainGrid" Background="White">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -26,20 +26,48 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <Button x:Name="button1" 
-                    Grid.Column="0" Grid.Row="2" Content="button1" Click="button_Click"/>
-            <Button x:Name="button2" 
-                    Grid.Column="1" Content="button2" Click="button_Click"/>
-            <Button x:Name="button3" 
-                    Grid.Column="2" Content="button3" Click="button_Click"/>
-            <Button x:Name="button4" 
-                    Grid.Column="3" Content="button4" Click="button_Click"/>
-            <Button x:Name="button5" 
-                    Grid.Column="4" Content="button5" Click="button_Click"/>
-            <Button x:Name="button6" 
-                    Grid.Column="5" Content="button6" Click="button_Click"/>
-            <Button x:Name="button7" 
-                    Grid.Column="6" Content="button7" Click="button_Click"/>
+            <Button x:Name="button1" Grid.Column="0" Click="button_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/key.png"/>
+                    <TextBlock VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+            <Button x:Name="button2" Grid.Column="1" Click="button_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/key.png"/>
+                    <TextBlock VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+            <Button x:Name="button3" Grid.Column="2" Click="button_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/key.png"/>
+                    <TextBlock VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+            <Button x:Name="button4" Grid.Column="3" Click="button_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/key.png"/>
+                    <TextBlock VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+            <Button x:Name="button5" Grid.Column="4" Click="button_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/key.png"/>
+                    <TextBlock VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+            <Button x:Name="button6" Grid.Column="5" Click="button_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/key.png"/>
+                    <TextBlock VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+            <Button x:Name="button7" Grid.Column="6" Click="button_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/key.png"/>
+                    <TextBlock VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
 
         </Grid>
 
